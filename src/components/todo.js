@@ -47,4 +47,4 @@ export default class Todo extends React.Component{
 }
 
 // ES6 mixin写法，通过mixin将store的与组件连接，功能是监听store带来的state变化并刷新到this.state
-ReactMixin.onClass(Todo, Reflux.connect(store));
+ReactMixin.onClass(Todo, Reflux.connect(store,'list'));

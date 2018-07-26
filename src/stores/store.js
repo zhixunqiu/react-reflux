@@ -22,14 +22,14 @@ export default Reflux.createStore({
     //on开头的都是action触发后的回调函数
     onGetAll () {
         //更新状态（就是个对象）
-        this.trigger({list:this.items});
+        this.trigger(this.items);
     },
     onAdd(item){
         this.items.push({name:item});
-        this.trigger({list:this.items});
+        this.trigger(this.items);
     },
     onRemove(i){
         this.items.remove(i);
-        this.trigger({list:this.items});
+        this.trigger(this.items);
     }
 });

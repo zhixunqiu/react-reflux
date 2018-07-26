@@ -17,19 +17,19 @@ const devServer = {
 module.exports = {
   moduleWebpack: {
     rules: [
-      {  
-          test: /\.bundle\.jsx$/, 
-          include: [
-            path.resolve(__dirname, 'src')
-          ],  
-          use:{
-            loader: 'bundle-loader',           
-            options: {  
-                lazy: true,  
-                name: '[name]'  
-            }
-          } 
-      },
+      // {  
+      //     test: /\.bundle\.jsx$/, 
+      //     include: [
+      //       path.resolve(__dirname, 'src')
+      //     ],  
+      //     use:{
+      //       loader: 'bundle-loader',           
+      //       options: {  
+      //           lazy: true,  
+      //           name: '[name]'  
+      //       }
+      //     } 
+      // },
       {
         test: [/\.js$/, /\.jsx$/, /\.es6$/],
         include: [
